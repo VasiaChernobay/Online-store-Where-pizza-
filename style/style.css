@@ -1,0 +1,866 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+* {
+  font-family: Inter;
+}
+
+a {
+  color: gray;
+  transition: .6s all linear;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px;
+}
+
+header.col-12 {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  min-height: 70px;
+  padding-left: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+header.col-12 > div:first-child {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  min-height: 35px;
+  display: flex;
+}
+
+header.col-12 > div:first-child > span {
+  margin-left: 30px;
+  margin: auto 30px;
+  position: relative;
+}
+
+header.col-12 > div:first-child > span::before {
+  content: '';
+  position: absolute;
+  background: url("../image/icon_location.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: -20px;
+}
+
+header.col-12 > div:last-child {
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header.col-12 > div:last-child p {
+  margin: auto;
+  margin-left: 50px;
+  position: relative;
+}
+
+header.col-12 > div:last-child p::before {
+  content: '';
+  position: absolute;
+  background: url("../image/pizza_icon.svg") no-repeat center;
+  width: 35px;
+  height: 35px;
+  top: -5px;
+  left: -40px;
+}
+
+header.col-12 > div:last-child ul {
+  background: url("../image/Menu.svg") no-repeat center;
+}
+
+header.col-12 > div:last-child ul > li {
+  display: none;
+}
+
+body > div:nth-child(2) > div:first-child {
+  display: flex;
+}
+
+body > div:nth-child(2) > div:first-child > ul:first-child > li.swiper-slide {
+  position: relative;
+}
+
+body > div:nth-child(2) > div:first-child > ul:first-child > li.swiper-slide::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+body > div:nth-child(2) > div:first-child > ul:first-child > li.swiper-slide:first-child::before {
+  background: url("../image/Stock.svg") no-repeat center;
+}
+
+body > div:nth-child(2) > div:first-child > ul:first-child > li.swiper-slide:nth-child(2)::before {
+  background: url("../image/Pizza.svg") no-repeat center;
+}
+
+body > div:nth-child(2) > div:first-child > ul:first-child > li.swiper-slide:nth-child(3)::before {
+  background: url("../image/Sushi.svg") no-repeat center;
+}
+
+body > div:nth-child(2) > div:first-child > ul:first-child > li.swiper-slide:nth-child(4)::before {
+  background: url("../image/drink.svg") no-repeat center;
+}
+
+body > div:nth-child(2) > div:first-child > ul:first-child > li.swiper-slide:nth-child(5)::before {
+  background: url("../image/Snacks.svg") no-repeat center;
+}
+
+body > div:nth-child(2) > div:first-child > ul:first-child > li.swiper-slide:nth-child(6)::before {
+  background: url("../image/Combo.svg") no-repeat center;
+}
+
+body > div:nth-child(2) > div:first-child > ul:first-child > li.swiper-slide:nth-child(7)::before {
+  background: url("../image/desserts.svg") no-repeat center;
+}
+
+body > div:nth-child(2) > div:first-child > ul:first-child > li.swiper-slide:nth-child(8)::before {
+  background: url("../image/Sauces.svg") no-repeat center;
+}
+
+body > div:nth-child(2) > div:first-child > ul:first-child > li.swiper-slide > a {
+  position: relative;
+  color: black;
+  display: block;
+  padding: 50px  30px 5px;
+  z-index: 5;
+}
+
+body > div:nth-child(2) > div:first-child > ul:first-child > li.swiper-slide > a:hover {
+  text-decoration: none;
+}
+
+body > div:nth-child(2) ul:first-child {
+  display: flex;
+}
+
+body > div:nth-child(2) ul:first-child > li {
+  margin: 0 15px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+body > div:nth-child(2) > form {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+  height: 90px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+body > div:nth-child(2) > form span:first-child {
+  font-weight: 600;
+}
+
+body > div:nth-child(2) > form > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body > div:nth-child(2) > form > div > div {
+  display: inline-block;
+  position: relative;
+}
+
+body > div:nth-child(2) > form > div > div::before {
+  content: '';
+  position: absolute;
+  background: url("../image/icon_location.svg") no-repeat center;
+  top: -6px;
+  z-index: 5;
+  left: -5px;
+  width: 55px;
+  height: 55px;
+}
+
+body > div:nth-child(2) > form input[type='text'] {
+  border-radius: 5px 0 0 5px;
+  height: 42px;
+  border: 1px solid lightgrey;
+  border-right: none;
+  position: relative;
+}
+
+body > div:nth-child(2) > form input[type='text']::placeholder {
+  padding-left: 40px;
+}
+
+body > div:nth-child(2) > form input[type='submit'] {
+  background: orange url("../image/Send.svg") no-repeat center;
+  height: 44px;
+  width: 44px;
+  border-radius: 5px;
+  border: none;
+  vertical-align: middle;
+}
+
+body > div:nth-child(2) div:nth-child(2) > ul {
+  height: 320px;
+  justify-content: center;
+  display: flex;
+}
+
+body > div:nth-child(2) div:nth-child(2) > ul > li {
+  height: 320px;
+  width: 300px;
+  position: relative;
+}
+
+body > div:nth-child(2) div:nth-child(2) > ul > li:nth-child(1) {
+  background: url("../image/pizza_list1.png") no-repeat center;
+  background-size: cover;
+}
+
+body > div:nth-child(2) div:nth-child(2) > ul > li:nth-child(1)::before {
+  content: '3 средние пиццы от 999 рублей';
+  position: absolute;
+  color: white;
+  bottom: 40px;
+  left: 10px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+body > div:nth-child(2) div:nth-child(2) > ul > li:nth-child(2) {
+  background: url("../image/pizza_list2.png") no-repeat center;
+  background-size: cover;
+}
+
+body > div:nth-child(2) div:nth-child(2) > ul > li:nth-child(2)::before {
+  content: 'Кэшбек 10% на самовывоз (доставка)';
+  position: absolute;
+  color: white;
+  bottom: 40px;
+  left: 10px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+body > div:nth-child(2) div:nth-child(2) > ul > li:nth-child(3) {
+  background: url("../image/pizza_list1.png") no-repeat center;
+  background-size: cover;
+}
+
+body > div:nth-child(2) div:nth-child(2) > ul > li:nth-child(3)::before {
+  content: '3 средние пиццы от 999 рублей';
+  position: absolute;
+  color: white;
+  bottom: 40px;
+  left: 10px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+body > div:nth-child(2) div:nth-child(2) > ul > li:nth-child(4) {
+  background: url("../image/pizza_list2.png") no-repeat center;
+  background-size: cover;
+}
+
+body > div:nth-child(2) div:nth-child(2) > ul > li:nth-child(4)::before {
+  content: 'Кэшбек 10% на самовывоз (доставка)';
+  position: absolute;
+  color: white;
+  bottom: 40px;
+  left: 10px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+body > div > p {
+  text-align: center;
+  font-weight: 600;
+}
+
+body > div > div:last-child > div {
+  min-height: 220px;
+}
+
+body > div > div:last-child > div > div > div p {
+  margin: auto;
+}
+
+body > div > div:last-child > div > div > div > button {
+  width: 131px;
+  height: 48px;
+  background: #FF7010;
+  border: 1px solid #FF7010;
+  border-radius: 10px;
+  display: flex;
+  font-size: 20px;
+  transition: .4s all linear;
+  color: white;
+  vertical-align: middle;
+}
+
+body > div > div:last-child > div > div > div > button:active {
+  background-color: red;
+}
+
+body > div > div:last-child > div > div > div > button > span {
+  margin: auto;
+}
+
+body > div > p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+body > div > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+body > div > div:first-child > span:first-child {
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0 auto;
+}
+
+body > div > div:last-child > div {
+  display: flex;
+  border-radius: 10px;
+  border: 1px gray solid;
+  padding: 30px 20px 10px;
+  position: relative;
+}
+
+body > div > div:last-child > div > div > div {
+  display: flex;
+}
+
+body > div > div:last-child > div > div > div > span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+body > div > div:last-child > div > div > div > p {
+  width: 100px;
+  padding: 0 15px;
+  border-radius: 5px;
+  background-color: #FFEEE2;
+  color: darkorange;
+  text-align: center;
+}
+
+body > div > div:last-child > div:first-child::before {
+  background: url("../image/icon_new.svg") no-repeat center;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  top: 35px;
+  left: 0;
+  border-radius: 0 10px 10px 0;
+}
+
+body > div > div:last-child > div:nth-child(2)::before {
+  background: url("../image/icon_hit.svg") no-repeat center;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  top: 35px;
+  left: 0;
+  border-radius: 0 10px 10px 0;
+}
+
+body > div > div:last-child > div img {
+  height: 100px;
+  width: 100px;
+}
+
+body > div > div:last-child > div > div > p:nth-child(1) {
+  font-weight: 600;
+}
+
+footer {
+  margin: 0 auto;
+  padding-left: 40px;
+  min-height: 300px;
+}
+
+footer .instagram a {
+  color: gray;
+  transition: .6s all linear;
+}
+
+footer .instagram a:hover {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px;
+}
+
+footer .facebook {
+  position: relative;
+}
+
+footer .facebook a {
+  color: gray;
+  transition: .6s all linear;
+}
+
+footer .facebook a:hover {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px;
+}
+
+footer .facebook::before {
+  content: '';
+  position: absolute;
+  background: url("../image/facebook_icon.svg") no-repeat center;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: -20px;
+}
+
+footer .instagram {
+  position: relative;
+}
+
+footer .instagram::before {
+  content: '';
+  position: absolute;
+  background: url("../image/instagram_icon.svg") no-repeat center;
+  width: 30px;
+  height: 30px;
+  top: -2px;
+  left: -20px;
+}
+
+footer > div {
+  margin-left: 30px;
+}
+
+footer > div.fixed_basket {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+footer > div > p:first-child {
+  font-weight: 600;
+}
+
+footer > div > p:nth-child(2) {
+  position: relative;
+}
+
+footer > div > p:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  background: url("../image/icon_tell.svg") no-repeat center;
+  width: 30px;
+  height: 30px;
+  top: -2px;
+  left: -25px;
+}
+
+footer > div address {
+  position: relative;
+}
+
+footer > div address::before {
+  content: '';
+  position: absolute;
+  background: url("../image/address_icon.svg") no-repeat center;
+  width: 30px;
+  height: 30px;
+  top: -2px;
+  left: -25px;
+}
+
+footer div.d-flex {
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+footer ul li {
+  text-align: left;
+}
+
+footer ul li:first-child {
+  font-weight: 600;
+}
+
+footer ul li > a {
+  color: gray;
+}
+
+footer ul li > a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+footer > p:first-child {
+  position: relative;
+  margin-left: 30px;
+}
+
+footer > p:first-child::before {
+  content: '';
+  position: absolute;
+  background: url("../image/pizza_icon.svg") no-repeat center;
+  top: -10px;
+  left: -30px;
+  width: 50px;
+  height: 50px;
+}
+
+footer > p:nth-child(5) {
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+body > * {
+  overflow: hidden;
+}
+
+body > div > div:nth-child(2) > div {
+  flex-wrap: wrap;
+}
+
+body > div > div > div > div > div {
+  flex-direction: column;
+  justify-content: center;
+}
+
+body > div > div > div > div > div > * {
+  margin: 15px auto;
+}
+
+header > p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+header > p a {
+  color: black;
+}
+
+header ul > li > a {
+  color: gray;
+  transition: .7s all linear;
+}
+
+header ul > li > a:hover {
+  color: black;
+  text-shadow: 1px 1px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+  body > div:nth-child(2) > div:nth-child(2) {
+    margin-bottom: 50px;
+  }
+  body > div:nth-child(2) > div:first-child {
+    justify-content: center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li {
+    position: relative;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:first-child::before {
+    background: url("../image/Stock.svg") no-repeat center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:nth-child(2)::before {
+    background: url("../image/Pizza.svg") no-repeat center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:nth-child(3)::before {
+    background: url("../image/Sushi.svg") no-repeat center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:nth-child(4)::before {
+    background: url("../image/drink.svg") no-repeat center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:nth-child(5)::before {
+    background: url("../image/Snacks.svg") no-repeat center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:nth-child(6)::before {
+    background: url("../image/Combo.svg") no-repeat center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:nth-child(7)::before {
+    background: url("../image/desserts.svg") no-repeat center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:nth-child(8)::before {
+    background: url("../image/Sauces.svg") no-repeat center;
+  }
+  body > div > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body > div > div:last-child > div {
+    min-width: 250px;
+    margin: 30px;
+  }
+  body > footer {
+    display: flex;
+  }
+  body > footer > p:first-child {
+    position: relative;
+  }
+  body > footer > p:first-child::after {
+    content: '© Copyright 2021 — Куда Пицца';
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 400px;
+  }
+  body > footer > ul > li {
+    margin: 10px;
+  }
+  header > div:first-child {
+    display: none;
+  }
+  header > ul {
+    display: flex;
+    justify-content: center;
+  }
+  header > ul > li {
+    margin: 25px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  header > div:first-child {
+    display: none;
+  }
+  header > ul {
+    display: flex;
+    justify-content: center;
+  }
+  header > ul > li {
+    margin: 25px;
+  }
+  body > div > div:last-child > div > div > div > button:hover {
+    background-color: white;
+    color: black;
+  }
+  body > div > div:last-child > div > div > div > button:hover:active {
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body > div:nth-child(2) > div:nth-child(2) {
+    margin-bottom: 50px;
+  }
+  body > div:nth-child(2) > div:first-child {
+    justify-content: center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li {
+    position: relative;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:first-child::before {
+    background: url("../image/Stock.svg") no-repeat center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:nth-child(2)::before {
+    background: url("../image/Pizza.svg") no-repeat center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:nth-child(3)::before {
+    background: url("../image/Sushi.svg") no-repeat center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:nth-child(4)::before {
+    background: url("../image/drink.svg") no-repeat center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:nth-child(5)::before {
+    background: url("../image/Snacks.svg") no-repeat center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:nth-child(6)::before {
+    background: url("../image/Combo.svg") no-repeat center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:nth-child(7)::before {
+    background: url("../image/desserts.svg") no-repeat center;
+  }
+  body > div:nth-child(2) > div:first-child > ul:first-child > li:nth-child(8)::before {
+    background: url("../image/Sauces.svg") no-repeat center;
+  }
+  body > div > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body > div > div:last-child > div {
+    min-width: 250px;
+    margin: 30px;
+  }
+  body > footer {
+    display: flex;
+  }
+  body > footer > p:first-child {
+    position: relative;
+  }
+  body > footer > p:first-child::after {
+    content: '© Copyright 2021 — Куда Пицца';
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 400px;
+  }
+  body > footer > ul > li {
+    margin: 10px;
+  }
+  header > div:first-child {
+    display: none;
+  }
+  header > ul {
+    display: flex;
+    justify-content: center;
+  }
+  header > ul > li {
+    margin: 25px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  header > div:first-child {
+    display: none;
+  }
+  header > ul {
+    display: flex;
+    justify-content: center;
+  }
+  header > ul > li {
+    margin: 25px;
+  }
+  body > div > div:last-child > div > div > div > button:hover {
+    background-color: white;
+    color: black;
+  }
+  body > div > div:last-child > div > div > div > button:hover:active {
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body > div:nth-child(2) > div:nth-child(2) > ul:first-child > li {
+    padding: 100px;
+  }
+  body > div:nth-child(2) > div:first-child, body > div:nth-child(2) > div:first-child > ul {
+    min-width: 0;
+  }
+  body > div:nth-child(2) > div:first-child li:last-child, body > div:nth-child(2) > div:first-child > ul li:last-child {
+    visibility: hidden;
+  }
+  footer > div.col-sm-5 {
+    border-bottom: 1px gray solid;
+    margin: 0 auto;
+  }
+  footer > p:first-child {
+    margin: 35px auto 35px;
+  }
+  footer ul {
+    margin: 35px auto 35px;
+  }
+  footer > * {
+    margin: 5px auto 5px;
+  }
+  footer > div > p:first-child {
+    margin: 35px auto 35px;
+    text-align: center;
+  }
+  footer > div > * {
+    margin: 5px auto 5px;
+  }
+  footer > p:nth-child(5) {
+    text-align: center;
+  }
+  body > div > div:nth-child(2) > div > div > div {
+    flex-wrap: wrap;
+  }
+  body > div > div:nth-child(2) > div > div > div > div {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 849px) {
+  header > ul {
+    display: none;
+  }
+  header {
+    display: flex;
+  }
+  header > p {
+    flex: 3;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  header > div {
+    background: url("../image/menu_black_48dp.svg") no-repeat center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+  }
+  header > div > div {
+    position: absolute;
+    display: none;
+    width: 200px;
+    z-index: 5;
+    min-height: 300px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: rgba(143, 129, 125, 0.5);
+  }
+  header > div > div > ul li {
+    margin: 15px;
+  }
+  header > div > div > ul li a {
+    color: black;
+  }
+  .close_icon_menu {
+    background: url(../image/close_black_48dp.svg);
+  }
+  .show {
+    display: block;
+  }
+  body > div > div:last-child > div {
+    min-width: 250px;
+    margin: 30px auto;
+  }
+}
